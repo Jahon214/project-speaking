@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Project</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <h1>Turkcha Ovozli Savollar</h1>
+
+    <div class="container">
+        <!-- Dastur 1 -->
+        <div class="module">
+            <div class="half question">
+                <h2>Bölüm 1.1</h2>
+                <textarea rows="7" placeholder="Savollarni kiriting, har birini yangi qatorga yozing..."
+                    style="width: 90%; padding: 8px;" id="questionInput1"></textarea>
+                <button onclick="startQuestions(1, 30)">soruları okuma</button>
+            </div>
+            <div class="half answer">
+                <h2>zaman</h2>
+                <div class="timer-container">
+                    <div class="circle" id="circle1"></div>
+                    <div class="timer-text" id="timer1">30s</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dastur 2 -->
+        <div class="module">
+            <div class="half question">
+                <h2>Bölüm 1.2</h2>
+                <textarea rows="7" placeholder="Savollarni kiriting, har birini yangi qatorga yozing..."
+                    style="width: 90%; padding: 8px;" id="questionInput2"></textarea>
+                <button onclick="startQuestions(2, 30)">soruları okuma</button>
+            </div>
+            <div class="half answer">
+                <h2>zaman</h2>
+                <div class="timer-container">
+                    <div class="circle" id="circle2"></div>
+                    <div class="timer-text" id="timer2">30s</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dastur 3 -->
+        <div class="module">
+            <div class="half question">
+                <h2>Bölüm 2</h2>
+                <textarea rows="7" placeholder="Savollarni kiriting, har birini yangi qatorga yozing..."
+                    style="width: 90%; padding: 8px;" id="questionInput3"></textarea>
+                <div id="smallTimer3"></div> <!-- Kichik taymer uchun element -->
+                <button onclick="startQuestions(3, 60)">soruları okuma</button>
+            </div>
+            <div class="half answer">
+                <h2>zaman</h2>
+                <div class="timer-container">
+                    <div class="circle" id="circle3"></div>
+                    <div class="timer-text" id="timer3">120s</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dastur 4 -->
+        <div class="module">
+            <div class="half question">
+                <h2>Bölüm 3</h2>
+                <textarea rows="7" placeholder="Savollarni kiriting, har birini yangi qatorga yozing..."
+                    style="width: 90%; padding: 8px;" id="questionInput4"></textarea>
+                <div id="smallTimer4"></div> <!-- Kichik taymer uchun element -->
+                <button onclick="startQuestions(4, 120)">soruları okuma</button>
+            </div>
+            <div class="half answer">
+                <h2>zaman</h2>
+                <div class="timer-container">
+                    <div class="circle" id="circle4"></div>
+                    <div class="timer-text" id="timer4">120s</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- JS -->
+        <script src="index.js"></script>
+</body>
+
+</html>
