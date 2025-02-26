@@ -20,7 +20,7 @@ function startQuestions(moduleNumber, timeLimit) {
         const currentQuestion = questions[currentQuestionIndex];
         const utterance = new SpeechSynthesisUtterance(currentQuestion);
         utterance.lang = 'tr-TR';
-        utterance.rate = 0.4; // Savolni sekinroq o'qish
+        utterance.rate = 1; // Savolni sekinroq o'qish
         speechSynthesis.speak(utterance);
 
         // Savol o'qib bo'lgach, yozib olishni boshlash yoki kichik taymerni ishga tushirish
